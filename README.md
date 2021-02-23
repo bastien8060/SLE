@@ -2,4 +2,4 @@
 
 SlimLightEngine Built with C++. Rendering + 3D Engine. Uses backward ray tracing. WIP
 
-#### By @Bastien8070 and @Samir (Github Username to be added)
+#### By @Bastien8060 and @SBruh314

@@ -27,7 +27,7 @@ $ git clone https://github.com/bastien8060/SLE
 $ cd SLE
 $ ./build.sh
 $ cd builds
-$ # run the build you want to run in this folder. The binaries are located here.
+$ # run the build you want to run in this folder. The binaries you just built are located here.
 ```
 
 ### Other OS

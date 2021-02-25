@@ -34,7 +34,7 @@ $ # run the build you want to run in this folder. The binaries you just built ar
 If you are running under another OS, then you can compile the code yourself with a C++ compiler. The file to compile is `main.cpp`.
 In case you are running under any issues, feel free to post a new issue in the issues tab of this repository. We might be able to cross compile the code for your system or find a solution.
 
-**Edit: Since last commit, Windows support has been temporarily dropped while a fix is being addressed to tjis platform. When it will work again, GNU/Linux and Windows will have two separate branches, and this message will be supressed.**
+**Edit: Since last commit, Windows support has been temporarily dropped while a fix is being addressed to this platform. When it will work again, GNU/Linux and Windows will have two separate branches, and this message will be supressed.**
 
 
 ## Usage/Demo

@@ -4,7 +4,7 @@ SlimLightEngine Built with C++. Rendering + 3D Engine. Uses backward ray tracing
 
 ## Disclaimers 
 
-This project is not finished yet. It is a work in progress and needs a lot more work in order to be something functionnal.
+This project is not finished yet. It is a work in progress and needs a lot more work in order to be something fully functionnal.
 
 
 ## Installation
@@ -34,7 +34,7 @@ $ # run the build you want to run in this folder. The binaries you just built ar
 If you are running under another OS, then you can compile the code yourself with a C++ compiler. The file to compile is `main.cpp`.
 In case you are running under any issues, feel free to post a new issue in the issues tab of this repository. We might be able to cross compile the code for your system or find a solution.
 
-**Edit: Since last commit, Windows support has been temporarily dropped while a fix is being addressed to it. When it will work again, GNU/Linux and Windows will have two separate branches.**
+**Edit: Since last commit, Windows support has been temporarily dropped while a fix is being addressed to tjis platform. When it will work again, GNU/Linux and Windows will have two separate branches, and this message will be supressed.**
 
 
 ## Usage/Demo
@@ -52,7 +52,7 @@ Informations inside a `{}` are information telling what a shape is like, when co
 
 The protocol can be split and sent in bits to fit in multiple small data transfer. Then it is effortlessly put back into a single request. To mark the end of the request, we send `@@@` at the end of a request or as another request.
 
-When drawing circles two parameters are needed: `r` for radius and `c` for midpoint coordinates. For polygons one paramete is needed: `c`, whih represents each points with coordinates.
+When drawing circles two parameters are needed: `r` for radius and `c` for midpoint coordinates. For polygons one parametre is needed: `c`, which represents each points with coordinates.
 
 A basic example for valid requests is this:
 
@@ -63,6 +63,6 @@ A basic example for valid requests is this:
 ```
 This draw a frame with a polygon (x:10,y:56;x2:50,y2:63;x3:32;y3:90)
 
-For now, the server only support parsing one request at a time.
+For now, the server only support parsing one shape for each request.
 
 #### By @Bastien8060 and @SBruh314

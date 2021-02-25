@@ -15,8 +15,8 @@ def render():
 	sleep(0.003)
 	client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 	client_socket.settimeout(1.0)
-	#message = b"@[polygon]{c:67,44|194,44|170,174|41,91;}\n@@@"
-	message = b"@[circle]{r:50;c:50,60;}\n@@@"
+	message = b"@[polygon]{c:67,44|194,44|170,174|41,91;}\n@@@"
+	#message = b"@[circle]{r:50;c:50,60;}\n@@@"
 	
 	addr = ("127.0.0.1", 6770)
 

@@ -50,9 +50,9 @@ For this project, we made a custom protocol and a custom parser/interpreter. It 
 
 Informations inside a `{}` are information telling what a shape is like, when combined with a draw action. With a Information action (`#[]`), it sets the value.
 
-The protocol can be split and sent in bits. Then it can be effortlessly put back into a single request. To mark the end of the request, we send `@@@` at the end of a request or as another request.
+The protocol can be split and sent in bits to fit in multiple small data transfer. Then it is effortlessly put back into a single request. To mark the end of the request, we send `@@@` at the end of a request or as another request.
 
-When drawing circles two parameters are needed: `r` for radius and `c` for midpoint coordinates. For polygons one parameters are needed: `c` each points coordinates.
+When drawing circles two parameters are needed: `r` for radius and `c` for midpoint coordinates. For polygons one paramete is needed: `c`, whih represents each points with coordinates.
 
 A basic example for valid requests is this:
 
@@ -61,6 +61,7 @@ A basic example for valid requests is this:
 @[circle]{r:50;c:10,56;}
 @@@
 ```
+This draw a frame with a polygon (x:10,y:56;x2:50,y2:63;x3:32;y3:90)
 
 For now, the server only support parsing one request at a time.
 
